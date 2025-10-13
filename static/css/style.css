@@ -1,4 +1,26 @@
 #catImage {
-    display: none; 
+    display: none;
     max-width: 300px;
+}
+
+.container {
+    width: 80%;
+    /* or any fixed width */
+    margin: 0 auto;
+    /* top/bottom = 0, left/right = auto */
+    text-align: center;
+    /* optional: center text inside */
+}
+
+ul {
+    text-align: center;
+    /* center the text */
+    list-style-position: inside;
+    /* bullets move with text */
+}
+
+.no-bullets {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
 }
