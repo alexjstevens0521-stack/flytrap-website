@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>flytrap is a band from sthldn</title>
+    <title>flytrap</title>
     <link rel="stylesheet" href="/static/css/style.css">
 </head>
 
@@ -14,24 +14,8 @@
         <img src="/static/images/sphinxphoto.jpg" alt="sphinxphoto" width="250" height="250"></a>
         <img src="/static/images/penge highstreet.png" alt="penge-highstreet" width="250" height="250"></a>
     </div>
-    <div class="container">
+    <div class="container" id="gig-listing">
         <h3>upcoming gigs</h3>
-        <ul class="no-bullets">
-            <li>
-                <a href="https://www.ticketweb.uk/event/tepynement-trail-2025-various-venues-glasgow-tickets/13666464"
-                    target="_blank">tenement trails 2025 (our first festival)</a>
-            </li>
-            <li>
-                <a href="https://link.dice.fm/g98103f2f18c?dice_id=g98103f2f18c" target="_blank">king gizzard cover set
-                    @
-                    the george tavern: 28/10</a>
-            </li>
-            <li>
-                <a href="https://link.dice.fm/Ed59e48ce692?dice_id=Ed59e48ce692" target="_blank">flytrap and friends @
-                    the
-                    george tavern: 12/11</a>
-            </li>
-        </ul>
     </div>
     <div class="container">
         <h3>other cool stuff</h3>
@@ -60,7 +44,8 @@
     <div class="container">
         <img src="/static/images/flytrap train.jpg" width="250" height="auto" display="block">
     </div>
-    <script src="/static/js/script.js"></script>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/getGigs.js') }}"></script>
 </body>
 
 </html>
