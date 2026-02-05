@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>flytrap</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+
+<body>
+    <h1>flytrap</h1>
+    <!-- this navbar would look way better vertical and on the left-->
+    <nav class="navbar">
+        <ul>
+            <li><a href="{{ url_for('home') }}">home</a></li>
+            <li><a href="{{ url_for('lyrics') }}">lyrics</a></li>
+            <li><a href="{{ url_for('gearlist') }}">gear list</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="container">
+            <h2>gear list</h2>
+            <div class="gear-grid">
+                <section class="gear-category">
+                    <h3>guitars</h3>
+                    <ul>
+                        <li>epiphone 58' korina explorer</li>
+                        <li>epiphone sg (classic p90s)</li>
+                        <li>squier affinity telecaster</li>
+                        <li>squier affinity jaguar bass</li>
+                    </ul>
+                </section>
+
+                <section class="gear-category">
+                    <h3>pedals</h3>
+                    <ul>
+                        <li>boss tu-3</li>
+                        <li>tc electronic polytune3</li>
+                        <li>red panda context 2</li>
+                        <li>earthquaker devices data corruptor</li>
+                        <li>jhs 3 series chorus</li>
+                        <li>rainger fx reverb x</li>
+                        <li>weird squarewave fuzz tremolo</li>
+                        <li>belcat chr604</li>
+                        <li>boss ds-1</li>
+                        <li>weird hotcake style overdrive from ebay</li>
+                        <li>ehx holy grail reverb max (broken)</li>
+                        <li>line6 m5 stompbox</li>
+                        <li>boss rc-3</li>
+                        <li>ehx bass big muff</li>
+                        <li>boss dd-8</li>
+                    </ul>
+                </section>
+
+                <section class="gear-category">
+                    <h3>synths</h3>
+                    <ul>
+                        <li>korg ms-20</li>
+                        <li>behringer crave</li>
+                        <li>behringer edge</li>
+                        <li>korg microkorg</li>
+                        <li>roland sp-404mk2</li>
+                        <li>serum 2</li>
+                        <li>arturia analog lab v</li>
+                    </ul>
+                </section>
+
+                <section class="gear-category">
+                    <h3>drums</h3>
+                    <ul>
+                        <li>premier artist maple kit (22", 13", 16")</li>
+                        <li>ludwig acrolyte snare (14" x 6.5")</li>
+                        <li>stagg 52 series double kick (broken)</li>
+                        <li>meinl byzance dual hats (14")</li>
+                        <li>meinl pure alloy medium crash (19")</li>
+                        <li>meinl byzance big apple ride (22")</li>
+                        <li>remo rototoms (8", 10", 12")</li>
+                        <li>meinl byzance vintage smack stack (10", 12", 14")</li>
+                        <li>alesis samplepad 4</li>
+                    </ul>
+                </section>
+
+                <section class="gear-category">
+                    <h3>mics</h3>
+                    <ul>
+                        <li>fake sm58</li>
+                        <li>sm58</li>
+                        <li>sm58</li>
+                        <li>sm57</li>
+                        <li>sm57</li>
+                        <li>fake shure pga mics</li>
+                        <li>t bone rb100</li>
+                        <li>t bone rb100</li>
+                        <li>rode m5</li>
+                        <li>rode m5</li>
+                    </ul>
+                </section>
+
+                <section class="gear-category">
+                    <h3>daw</h3>
+                    <ul>
+                        <li>ableton live 11 suite</li>
+                        <li>logic pro x</li>
+                    </ul>
+                </section>
+
+
+                <section class="gear-category">
+                    <h3>pa</h3>
+                    <ul>
+                        <li>vonyx vps102a active party speakers with leds (10")(600w)</li>
+                        <li>studiomaster club XS10+ 10 channel audio mixer</li>
+                    </ul>
+                </section>
+
+                <section class="gear-category">
+                    <h3>rack</h3>
+                    <ul>
+                        <li>focusrite scarlett 18i20 3rd gen usb audio interface</li>
+                        <li>the t racks vm100 power conditioner </li>
+                        <li>behringer ultrapatch pro fx 3000 multi fuctional 48 point 3 mode balanced patch bay</li>
+                        <li>alesis midiverb 4</li>
+                    </ul>
+                </section>
+
+                <section class="gear-category">
+                    <h3>cables</h3>
+                    <ul>
+                        <li>vox vintage coiled cable (straight - angled) (29.5ft, black)</li>
+                        <li>brit school made jack cable (straight - straight) (3m, red)</li>
+                        <li>fender professional series instrument cable (straight - angled) (18.6ft, black) x2</li>
+                        <li>nobull premium instrument cable (straight - straight) (3m, black)</li>
+                        <li>orange crush instrument cable (straight - angled) (3m, orange)</li>
+                        <li>assorted patch cables (TS)</li>
+                        <li>visiosound premium xlr lead (male to female) noiseless balanced (3m, yellow) x5</li>
+                        <li>stagg smc3 cgr xlr microphone cable (3m, green)</li>
+                        <li>devine mic100/5 xlr microphone cable (5m, black) x2</li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-links">
+                <a href="https://www.instagram.com/flytrapbandse?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                    target=”_blank”>instagram</a>
+                <a href="https://open.spotify.com/artist/1IXGH0mY6qgjTYTKo0nN3O?si=4mWC8xA0SHWlfVL61NEszg"
+                    target=”_blank”>spotify</a>
+                <a href="https://flytrapldn.bandcamp.com/track/gutted" target=”_blank”>bandcamp</a>
+            </div>
+            <p class="copyright">flytrapbandse@gmail.com</p>
+            <p class="copyright">#morenoise</p>
+        </div>
+    </footer>
+</body>
+
+</html>

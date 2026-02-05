@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>flytrap</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+
+<body>
+    <h1>flytrap</h1>
+    <nav class="navbar">
+        <ul>
+            <li><a href="{{ url_for('home') }}">home</a></li>
+            <li><a href="{{ url_for('lyrics') }}">lyrics</a></li>
+            <li><a href="{{ url_for('gearlist') }}">gear list</a></li>
+
+        </ul>
+
+    </nav>
+    <main>
+        <div class="container">
+            <h2>lyrics</h2>
+            <div class="lyrics-page-container">
+                <nav class="song-list">
+                    <h3>songs</h3>
+                    <ul>
+                        <li><button id="default-song" onclick="showLyrics('song1', this)">gutted</button></li>
+                        <li><button onclick="showLyrics('song2', this)">river queen</button></li>
+                        <li><button onclick="showLyrics('song3', this)">brown and red</button></li>
+                        <li><button onclick="showLyrics('song4', this)">megaverse</button></li>
+                        <li><button onclick="showLyrics('song5', this)">flute song</button></li>
+                    </ul>
+                </nav>
+
+                <div class="lyrics-content">
+                    <h2 id="song-title">select a song</h2>
+                    <pre id="lyrics-text">
+</pre>
+                </div>
+
+                <aside class="song-metadata">
+                    <h3>info</h3>
+                    <p id="meta-content">
+                    </p>
+                </aside>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-links">
+                <a href="https://www.instagram.com/flytrapbandse?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                    target=”_blank”>instagram</a>
+                <a href="https://open.spotify.com/artist/1IXGH0mY6qgjTYTKo0nN3O?si=4mWC8xA0SHWlfVL61NEszg"
+                    target=”_blank”>spotify</a>
+                <a href="https://flytrapldn.bandcamp.com/track/gutted" target=”_blank”>bandcamp</a>
+            </div>
+            <p class="copyright">flytrapbandse@gmail.com</p>
+            <p class="copyright">#morenoise</p>
+        </div>
+    </footer>
+    <script src="{{ url_for('static', filename='js/lyrictabs.js') }}"></script>
+</body>
+
+</html>

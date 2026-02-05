@@ -13,11 +13,14 @@ async function loadGigs() {
 
         // Render upcomming gigs
         container.innerHTML = upcomingGigs.map(gig => `
-    <div class="gig-item">
-      <span class="date">${gig.date}</span>
-      <span class="venue"><strong>${gig.venue}</strong></span>
-      <span class="location">${gig.location}</span>
-      <a href="${gig.link}" class="ticket-btn">Tickets</a>
+            <div class="gig-row">
+        <div class="gig-info">
+            <span class="gig-date">${gig.date}</span>
+            <span class="gig-venue">${gig.venue}, ${gig.location}</span>
+        </div>
+        <div>
+            <a href="${gig.link}" class="btn-gig" target="_blank">tickets</a>
+        </div>
     </div>
   `).join('');
 

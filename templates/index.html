@@ -3,48 +3,64 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>flytrap</title>
     <link rel="stylesheet" href="/static/css/style.css">
 </head>
 
 <body>
-    <div class="container">
-        <h1>all of our links and stuff :0 ✧.* `*:;,．★</h1>
-        <img src="/static/images/sphinxphoto.jpg" alt="sphinxphoto" width="250" height="250"></a>
-        <img src="/static/images/penge highstreet.png" alt="penge-highstreet" width="250" height="250"></a>
-    </div>
-    <div class="container" id="gig-listing">
-        <h3>upcoming gigs</h3>
-    </div>
-    <div class="container">
-        <h3>other cool stuff</h3>
-        <div class="container">
-            <input type="checkbox" id="checkboxOne">
-            <a href="https://www.youtube.com/watch?v=LGeWp2gugIY&t=1001s&ab_channel=LouSmith" target="_blank"> lou smith
-                live at the george</a>
-        </div>
-        <div class="container">
-            <img id="catImage" src="/static/images/cute cat lol.jpg">
-        </div>
-    </div>
-    <div class="container">
-        <h3>our music</h3>
-        <ul class="no-bullets">
-            <li>
-                <a href="https://open.spotify.com/track/6UBo571PB3zHv4Jl3Dd9YR?si=72e03960d64f46ca"
-                    target="_blank">gutted
-                    (out everywhere)</a>
-            </li>
-            <li>
-                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">leaked song</a>
-            </li>
+    <h1>flytrap</h1>
+    <nav class="navbar">
+        <ul>
+            <li><a href="{{ url_for('home') }}">home</a></li>
+            <li><a href="{{ url_for('lyrics') }}">lyrics</a></li>
+            <li><a href="{{ url_for('gearlist') }}">gear list</a></li>
         </ul>
-    </div>
-    <div class="container">
-        <img src="/static/images/flytrap train.jpg" width="250" height="auto" display="block">
-    </div>
-    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    </nav>
+
+    <main>
+        <div class="container">
+            <h2>gigs</h2>
+            <div id="gig-listing"></div>
+            <h2>our music</h2>
+            <div class="promo-container">
+                <div class="promo-image">
+                    <img src="{{ url_for('static', filename='images/gutted.jpg') }}" alt="gutted album art">
+                </div>
+
+                <div class="promo-content">
+                    <h2>gutted (out everywhere)</h2>
+                    <div class="promo-links">
+                        <a href="https://open.spotify.com/track/6UBo571PB3zHv4Jl3Dd9YR?si=90f57d0cf43841fb"
+                            target="_blank" class="btn-promo">spotify</a>
+                        <a href="https://flytrapldn.bandcamp.com/track/gutted" target="_blank"
+                            class="btn-promo">bandcamp</a>
+                    </div>
+                </div>
+            </div>
+            <h2>live</h2>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/LGeWp2gugIY?si=64EEqF2c698BxU4N" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-links">
+                <a href="https://www.instagram.com/flytrapbandse?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                    target=”_blank”>instagram</a>
+                <a href="https://open.spotify.com/artist/1IXGH0mY6qgjTYTKo0nN3O?si=4mWC8xA0SHWlfVL61NEszg"
+                    target=”_blank”>spotify</a>
+                <a href="https://flytrapldn.bandcamp.com/track/gutted" target=”_blank”>bandcamp</a>
+            </div>
+            <p class="copyright">flytrapbandse@gmail.com</p>
+            <p class="copyright">#morenoise</p>
+        </div>
+    </footer>
+
     <script src="{{ url_for('static', filename='js/getGigs.js') }}"></script>
 </body>
 
