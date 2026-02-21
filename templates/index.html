@@ -39,6 +39,14 @@
                 </div>
             </div>
             <h2>live</h2>
+            <button type="button" class="collapsible">live at the george tavern</button>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/LGeWp2gugIY?si=64EEqF2c698BxU4N" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <button type="button" class="collapsible">live at venue mot</button>
             <div class="video-container">
                 <iframe src="https://www.youtube.com/embed/LGeWp2gugIY?si=64EEqF2c698BxU4N" title="YouTube video player"
                     frameborder="0"
@@ -62,6 +70,7 @@
     </footer>
 
     <script src="{{ url_for('static', filename='js/getGigs.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/videos.js') }}"></script>
 </body>
 
 </html>
