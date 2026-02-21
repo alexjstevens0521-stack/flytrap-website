@@ -63,8 +63,7 @@ prod: alex stevens, spencer withey`
     },
     "song2": {
         title: "river queen",
-        lyrics: `oh the river queen
-chieftain of the stream`,
+        lyrics: `tba`,
         info: `unreleased.
 vox: alex stevens, hannah dobbs
 guitar1: alex stevens
@@ -75,8 +74,7 @@ drums: arthur mazandarani`
     },
     "song3": {
         title: "brown and red",
-        lyrics: `brown and red and
-brown and red`,
+        lyrics: `tba`,
         info: `unreleased.
 vox: hannah dobbs
 guitar1: hannah dobbs
@@ -195,7 +193,6 @@ function showLyrics(songKey, element) {
     }
 }
 
-// Run this when the page opens
 window.onload = function () {
     const defaultBtn = document.getElementById('default-song');
     showLyrics('song1', defaultBtn);

@@ -5,7 +5,6 @@
 
 .container {
     max-width: 1100px;
-    /* Prevents the gear columns from drifting too far apart */
     margin: 0 auto;
     padding: 0 20px;
     text-align: center;
@@ -30,9 +29,7 @@ h1 {
     list-style-type: none;
     padding: 0;
     margin: 0;
-    /* Enables Flexbox */
     display: flex;
-    /* Centers the items horizontally */
     justify-content: center;
 }
 
@@ -49,7 +46,6 @@ h1 {
     transition: 0.3s;
 }
 
-/* Container for the whole list */
 .gear-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -60,7 +56,6 @@ h1 {
 
 .gear-category ul {
     list-style: "→ ";
-    /* Custom bullet point for a techy vibe */
     padding-left: 20px;
 }
 
@@ -74,12 +69,10 @@ h1 {
     padding-bottom: 5px;
     margin-bottom: 15px;
     width: 100%;
-    /* Ensures the red line spans the column width */
 }
 
 .gear-category ul {
     padding-left: 15px;
-    /* Gives the arrows some breathing room */
 }
 
 .gig-container {
@@ -93,18 +86,13 @@ h1 {
     padding: 20px 0;
     border-bottom: 1px solid red;
     width: 100%;
-    /* Spans the full width of the container */
-    /* Keeps the list from getting too wide on desktop */
 }
 
 .gig-date {
     color: red;
     font-weight: bold;
     width: 100px;
-    /* FIXED WIDTH: This is the secret to vertical alignment */
     flex-shrink: 0;
-    /* Prevents the date from squishing */
-
 }
 
 .btn-gig {
@@ -119,44 +107,38 @@ h1 {
     transition: 0.3s;
 }
 
-/* This centers the content inside the gig container */
 #gig-listing {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* Centers the rows if they are smaller than the container */
 }
 
 .gig-info {
     display: flex;
     align-items: center;
     text-align: left;
-    /* Keeps text left-aligned within the flex item */
 }
 
 .video-container {
     display: grid;
-    grid-template-rows: 0fr; /* Starts completely collapsed */
-    margin-top: 0; /* Hides the margin when closed */
-    overflow: hidden; /* Prevents the video from spilling out */
+    grid-template-rows: 0fr;
+    margin-top: 0;
+    overflow: hidden;
     transition: grid-template-rows 0.3s ease-out, margin-top 0.3s ease-out;
 }
 
-/* New class we will trigger with JavaScript */
 .video-container.open {
-    grid-template-rows: 1fr; /* Expands smoothly to the exact height needed */
-    margin-top: 20px; /* Restores your original gap */
+    grid-template-rows: 1fr;
+    margin-top: 20px;
 }
 
-/* Updated iframe styling */
 .video-container iframe {
-    min-height: 0; /* Mandatory for CSS grid transitions to work properly */
+    min-height: 0;
     width: 100%;
-    aspect-ratio: 16 / 9; /* Moved here so the iframe dictates its own height */
+    aspect-ratio: 16 / 9;
     border: none;
 }
 
-/* This ensures the footer stays at the bottom of short pages */
 body {
     display: flex;
     flex-direction: column;
@@ -166,7 +148,6 @@ body {
 
 main {
     flex: 1;
-    /* This pushes the footer down by taking up all available space */
 }
 
 footer {
@@ -177,9 +158,7 @@ footer {
 .footer-links {
     display: flex;
     justify-content: center;
-    /* Centers the whole row */
     gap: 15px;
-    /* Perfectly uniform space between links */
     margin-bottom: 10px;
 }
 
@@ -190,12 +169,10 @@ footer {
     font-size: 0.9rem;
 }
 
-/* If you want dividers back, do it with CSS instead of HTML text */
 .footer-links a:not(:last-child)::after {
     content: "|";
     margin-left: 15px;
     color: #ccc;
-    /* Make the divider a lighter color than the text */
 }
 
 .copyright {
@@ -205,12 +182,9 @@ footer {
 
 .lyrics-page-container {
     display: grid;
-    /* Three columns: 200px for the list, 1 'fraction' for lyrics, 200px for info */
     grid-template-columns: 200px 1fr 200px;
     gap: 80px;
-    /* Adjusts the space between columns */
     max-width: 1200px;
-    /* Centers the whole layout on the screen */
     text-align: left;
 }
 
@@ -231,15 +205,13 @@ footer {
     padding: 0;
 }
 
-/* This styles the song that is currently being viewed */
 .active-song {
     text-decoration: underline;
     text-decoration-style: solid;
     font-weight: bold;
-    /* Optional: makes it pop a bit more */
 }
 
-/* Keep your hover state separate */
+
 .song-list button:hover {
     text-decoration: underline;
 }
@@ -247,39 +219,26 @@ footer {
 
 .lyrics-display {
     width: 400px;
-    /* Set a fixed width so the lines wrap nicely */
     text-align: left;
 }
 
 #lyrics-text {
-
-    /* Keep it consistent */
     white-space: pre-wrap;
-    /* Preserves line breaks from your lyrics */
     line-height: 1.6;
     margin-top: 20px;
 }
 
 html {
-    /* This forces the vertical scrollbar to always stay visible */
     overflow-y: scroll;
 }
 
 .lyrics-content {
-    /* Set a height that fits your screen (e.g., 60vh is 60% of the screen height) */
     height: 60vh;
-
-    /* This enables the internal scrollbar only when needed */
     overflow-y: auto;
-
-    /* Optional: adds a little breathing room at the bottom of the scroll */
     padding-bottom: 20px;
-
-    /* Ensure the text stays left-aligned */
     text-align: left;
 }
 
-/* Optional: Hide the scrollbar track for a cleaner look */
 .lyrics-content::-webkit-scrollbar {
     width: 5px;
 }
@@ -296,12 +255,10 @@ html {
 
 .promo-image {
     flex: 1;
-    /* Takes up equal space */
 }
 
 .promo-image img {
     width: 100%;
-    /* Makes image responsive */
     height: auto;
     display: block;
 }
@@ -310,19 +267,14 @@ html {
     flex: 1;
     display: flex;
     flex-direction: column;
-    /* Stacks the title over the links */
     justify-content: center;
-    /* Centers everything vertically in the column */
     align-items: center;
-    /* Centers everything horizontally */
     text-align: center;
 }
 
 .promo-links {
     display: flex;
-    /* This puts spotify and bandcamp side-by-side */
     gap: 30px;
-    /* Space between the two links */
     justify-content: center;
 }
 
@@ -370,15 +322,12 @@ html {
 
 @media (max-width: 768px) {
     .lyrics-page-container {
-        /* Change from 3 columns to 1 column */
         grid-template-columns: 1fr;
         gap: 30px;
         padding: 20px;
     }
 
     .song-list {
-        /* Optional: make the song list scroll horizontally 
-           so it doesn't take up too much vertical space */
         display: flex;
         overflow-x: auto;
         white-space: nowrap;
@@ -393,14 +342,11 @@ html {
 
     .song-list h3 {
         display: none;
-        /* Hide the 'songs' header to save space */
     }
 
     .lyrics-content {
         height: auto;
-        /* Let the lyrics expand naturally on mobile */
         max-height: 50vh;
-        /* Or keep a shorter internal scroll */
     }
 
     .song-metadata {
