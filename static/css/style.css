@@ -135,16 +135,24 @@ h1 {
 }
 
 .video-container {
-    width: 100%;
-    /* Fills the container width */
-    aspect-ratio: 16 / 9;
-    /* Forces the height based on width */
-    margin-top: 20px;
+    display: grid;
+    grid-template-rows: 0fr; /* Starts completely collapsed */
+    margin-top: 0; /* Hides the margin when closed */
+    overflow: hidden; /* Prevents the video from spilling out */
+    transition: grid-template-rows 0.3s ease-out, margin-top 0.3s ease-out;
 }
 
+/* New class we will trigger with JavaScript */
+.video-container.open {
+    grid-template-rows: 1fr; /* Expands smoothly to the exact height needed */
+    margin-top: 20px; /* Restores your original gap */
+}
+
+/* Updated iframe styling */
 .video-container iframe {
+    min-height: 0; /* Mandatory for CSS grid transitions to work properly */
     width: 100%;
-    height: 100%;
+    aspect-ratio: 16 / 9; /* Moved here so the iframe dictates its own height */
     border: none;
 }
 
@@ -333,6 +341,31 @@ html {
 .promo-buttons {
     text-align: center;
 }
+
+.collapsible {
+    color: red;
+    background-color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid red;
+    text-align: left;
+    font-family: serif;
+    font-size: 1rem;
+}
+
+.active {
+    text-decoration: underline;
+    text-decoration-style: solid;
+    font-weight: bold;
+}
+
+.collapsible:hover {
+    text-decoration: underline;
+}
+
+
 
 
 @media (max-width: 768px) {
