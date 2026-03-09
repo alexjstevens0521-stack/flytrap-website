@@ -69,7 +69,7 @@ vox: alex stevens, hannah dobbs
 guitar1: alex stevens
 guitar2: hannah dobbs
 bass: hasan naqvi
-synth: elizabeth drummond
+synth: lizzie drummond
 drums: arthur mazandarani`
     },
     "song3": {
@@ -80,7 +80,7 @@ vox: hannah dobbs
 guitar1: hannah dobbs
 guitar2: alex stevens
 bass: hasan naqvi
-synth: elizabeth drummond
+synth: lizzie drummond
 drums: arthur mazandarani`
     },
     "song4": {
@@ -135,7 +135,7 @@ vox: hannah dobbs
 guitar1: hannah dobbs
 guitar2: alex stevens
 bass: hasan naqvi
-synth: elizabeth drummond
+synth: lizzie drummond
 drums: arthur mazandarani`
     },
     "song5": {
@@ -164,7 +164,7 @@ vox: hannah dobbs
 guitar1: hannah dobbs
 guitar2: alex stevens
 bass: hasan naqvi
-synth: elizabeth drummond
+synth: lizzie drummond
 drums: arthur mazandarani`
     },
 
