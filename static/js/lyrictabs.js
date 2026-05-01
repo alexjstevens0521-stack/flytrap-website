@@ -117,7 +117,7 @@ river queen
 she floats downstream
 poseidon son
 she float down stream `,
-        info: `unreleased.
+        info: `released 2026.
 vox: alex stevens, hannah dobbs
 guitar1: alex stevens
 guitar2: hannah dobbs
@@ -127,7 +127,13 @@ drums: arthur mazandarani`
     },
     "song3": {
         title: "brown and red",
-        lyrics: `tba`,
+        lyrics: `alex is brown and red and brown and red
+alex is brown and red and brown and red
+alex is brown and red and brown and red
+alex is brown and red and brown and red
+alex is brown and red and brown and red
+alex is brown and red and brown and red
+alex is brown and red and brown and red`,
         info: `unreleased.
 vox: hannah dobbs
 guitar1: hannah dobbs

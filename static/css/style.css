@@ -364,3 +364,7 @@ html {
         text-align: left;
     }
 }
+
+.bordered-image {
+    border: 1px solid hsl(0, 0%, 20%);
+}
