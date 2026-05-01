@@ -63,7 +63,60 @@ prod: alex stevens, spencer withey`
     },
     "song2": {
         title: "river queen",
-        lyrics: `tba`,
+        lyrics: `oh the river queen
+chieftain of the stream
+the tethys deity
+came and healed me
+ark of prophecy
+oh it carries me
+through my odyssey
+oh so modestly
+
+she keep me from sea sprite
+sail she must from the night
+for jonah my epithet
+all hail the river queen
+
+one eyed giant
+drunk and violent
+fatal error
+face the trial of
+river queen
+she floats downstream
+poseidon son
+she float down stream
+
+the scylla chases me
+she sails a victory
+terror reckons me
+currents fight with me
+when choppy waters come
+fair nymph tune she strum
+boat of high esteem
+keep on sail for me
+
+she keep me from sea sprite
+sail she must from the night
+for jonah my epithet
+all hail the river queen
+
+one eyed giant
+drunk and violent
+fatal error
+face the trial of
+river queen
+she floats downstream
+poseidon son
+she float down stream
+
+one eyed giant
+drunk and violent
+fatal error
+face the trial of
+river queen
+she floats downstream
+poseidon son
+she float down stream `,
         info: `unreleased.
 vox: alex stevens, hannah dobbs
 guitar1: alex stevens
